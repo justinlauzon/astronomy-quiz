@@ -1,0 +1,40 @@
+cone: 
+    NASA, Holland Ford (JHU), the ACS Science Team and ESA
+
+redspider: 
+    ESA & Garrelt Mellema (Leiden University, the Netherlands)
+    https://esahubble.org/images/heic0109a/
+
+mysticmountain: 
+    NASA, ESA, M. Livio and the Hubble 20th Anniversary Team (STScI)
+    https://esahubble.org/images/heic1007a/
+
+southerncrab:
+    NASA, ESA, and STScI
+    https://esahubble.org/images/heic1907a/
+
+helix:
+    NASA, ESA, C.R. O'Dell (Vanderbilt University), and M. Meixner, P. McCullough, and G. Bacon ( Space Telescope Science Institute)
+    https://esahubble.org/images/opo0432d/
+
+
+butterfly:
+    NASA, ESA, and J. Kastner (RIT)
+    https://esahubble.org/images/heic2011b/
+
+
+lagoon2:   
+    NASA, ESA, J. Trauger (Jet Propulsion Laboratory)
+    https://esahubble.org/images/heic1517a/
+
+boomerang: 
+    NASA, ESA and The Hubble Heritage Team STScI/AURA
+    https://esahubble.org/images/opo0525a/
+
+carina:
+    NASA/ESA, The Hubble Heritage Team (AURA/STScI)
+    https://esahubble.org/images/opo0006a/
+
+    
+
+
