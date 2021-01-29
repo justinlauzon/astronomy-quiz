@@ -3,6 +3,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-transition: background-image 1s;
+    transition: background-image 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
 }
 
 .move-left {
@@ -131,13 +136,13 @@ body {
     width: 30rem;
     color: black;
     margin-bottom: 1rem;
-    transition: all .3s;
+    transition: all .2s;
 
 }
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 .1rem .5rem .5rem rgba(255,255,255, .7);
+    box-shadow: 0 0 0 .2rem rgba(44, 221, 183, .7);
 }
 
 .choice-wrapper {
@@ -158,11 +163,11 @@ body {
 }
 
 .correct {
-    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+    background: linear-gradient(32deg, rgb(62, 236, 129) 0%, rgb(41, 232, 111) 100%);
 }
 
 .incorrect {
-    background: linear-gradient(32deg, rgb(223, 43, 11) 0%, rgb(232, 41, 41) 100%);
+    background: linear-gradient(32deg, rgb(233, 89, 63) 0%, rgb(182, 63, 63) 100%);
 }
 
 /* Heads Up Display */
