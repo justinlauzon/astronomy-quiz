@@ -1,0 +1,24 @@
+.justify-center {justify-content: center}
+.align-items {align-items: center}
+.hidden {display: none}
+.margin-bottom-big {margin-bottom: 4rem;}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.test-bg {
+    background-color: red;
+}

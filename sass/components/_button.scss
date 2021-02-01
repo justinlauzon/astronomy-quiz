@@ -1,0 +1,28 @@
+.btn {
+    font-size: 2.4rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    margin: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* background: linear-gradient(90deg, rgb(160, 190, 255) 0%, rgb(121, 175, 255) 100%); */
+    border-radius: 1rem;
+    border: .2rem solid rgb(122, 153, 201);
+    transition: all 300ms;
+    user-select: none;
+    
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(122, 153, 201, .7);
+    
+    /* transform: scale(1.03); */
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
