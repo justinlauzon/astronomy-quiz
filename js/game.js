@@ -6,8 +6,8 @@ const progressBarFull = document.querySelector('#progressBarFull');
 const container = document.querySelector('body');
 const actualContainer = document.querySelector('.container');
 const game = document.querySelector('#game');
-const showTab = document.querySelector('#show-tab');
-const gameTabIcon = document.querySelector('#show__icon')
+// const showTab = document.querySelector('#show-tab');
+// const gameTabIcon = document.querySelector('#show__icon')
 const info = document.querySelector('.info')
 
 
@@ -22,8 +22,8 @@ actualContainer.addEventListener('click', function(e) {
     else {
         game.classList.toggle('move-left');
         game.classList.toggle('move-from-left');
-        gameTabIcon.classList.toggle('fa-chevron-circle-right');
-        gameTabIcon.classList.toggle('fa-chevron-circle-left');
+        // gameTabIcon.classList.toggle('fa-chevron-circle-right');
+        // gameTabIcon.classList.toggle('fa-chevron-circle-left');
     }
 })
 
@@ -175,26 +175,26 @@ startGame = () => {
 }
 
 
-showTab.addEventListener('click', e => {
-    game.classList.toggle('move-left');
-    game.classList.toggle('move-from-left');
+// showTab.addEventListener('click', e => {
+//     game.classList.toggle('move-left');
+//     game.classList.toggle('move-from-left');
     
-    setTimeout(() => {
-        gameTabIcon.classList.toggle('fa-chevron-circle-right');
-        gameTabIcon.classList.toggle('fa-chevron-circle-left');
-    }, 200)
-})
+//     setTimeout(() => {
+//         gameTabIcon.classList.toggle('fa-chevron-circle-right');
+//         gameTabIcon.classList.toggle('fa-chevron-circle-left');
+//     }, 200)
+// })
 
 
-showTab.addEventListener('mouseover', e => {
-    showTab.style.left = '0';
-})
+// showTab.addEventListener('mouseover', e => {
+//     showTab.style.left = '0';
+// })
 
-showTab.addEventListener('mouseleave', e => {
-    setTimeout(() => {
-        showTab.style.left = '-4rem';
-    }, 1000)
-})
+// showTab.addEventListener('mouseleave', e => {
+//     setTimeout(() => {
+//         showTab.style.left = '-4rem';
+//     }, 1000)
+// })
 
 
 getNewQuestion = () => {

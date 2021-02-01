@@ -5,8 +5,7 @@
     text-align: center;
     margin: 1rem;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    /* background: linear-gradient(90deg, rgb(160, 190, 255) 0%, rgb(121, 175, 255) 100%); */
+    color: $col-white;
     border-radius: 1rem;
     border: .2rem solid rgb(122, 153, 201);
     transition: all 300ms;
@@ -25,4 +24,19 @@
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+
+.next-button {
+    background-color: $col-secondary;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5rem;
+    /* opacity: 0; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* visibility: hidden;     */
 }

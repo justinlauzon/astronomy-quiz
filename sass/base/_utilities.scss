@@ -22,3 +22,10 @@
 .test-bg {
     background-color: red;
 }
+
+.move-left {
+    animation: toLeft .4s forwards;
+}
+.move-from-left {
+    animation: fromLeft .4s both;
+}

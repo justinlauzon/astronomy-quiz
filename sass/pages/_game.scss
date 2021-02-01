@@ -10,16 +10,6 @@ body {
 
 }
 
-.move-left {
-    animation: toLeft .4s forwards;
-}
-.move-from-left {
-    animation: fromLeft .4s both;
-}
-
-
-
-
 
 
 #game {
@@ -28,91 +18,7 @@ body {
     /* bottom: 4rem; */
 }
 
-.game-tabs {
-    position: absolute;
-    top: 10rem;
-    left: 0;
-}
 
-.game-tab {
-    background-color: rgba(11, 122, 108, .4);
-    width: 5rem;
-    height: 5rem;
-    border-radius: 0 .3rem .3rem 0;
-    position: relative;
-    top: 40%;
-    /* left: -4rem; */
-    left: 0;
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    transition: all .3s;
-}
-
-.game-tab:hover {
-    background-color: rgba(11, 122, 108, 1);
-}
-
-.game-tab--icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#show-tab {
-    margin-top: 4rem;
-}
-
-
-.info {
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    border: .2rem solid white;
-    border-radius: 50%;
-    font-size: 2rem;
-    position: absolute;
-    right: 2rem;
-    bottom: 5rem;
-    transition: all .3s;
-}
-
-.info:hover {
-    transform:scale(1.15);
-}
-
-.info-box {
-    position: absolute;
-    /* content: ''; */
-    width: 20rem;
-    height: 10rem;
-    background-color: tomato;
-    right: 6rem;
-    bottom: 6rem;
-    display: none;
-}
-
-.next-button {
-    background-color: navy;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    text-align: center;
-    cursor: pointer;
-    /* opacity: 0; */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* visibility: hidden;     */
-}
-
-.fa-info-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .choice-container {
     /* display: flex;
@@ -180,28 +86,15 @@ body {
     text-align: center;
 }
 
-#progressBar {
-    width: 20rem;
-    height: 3rem;
-    border: .2rem solid rgb(44, 221, 183);
-    margin-top: 2rem;
-    border-radius: 5rem;
-    overflow: hidden;
-}
 
-#progressBarFull {
-    height: 100%;
-    background: rgb(11, 122, 108);
-    width: 0%;
-}
 
 
 #question {
     font-size: 3rem;
 }
 
-@media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 70rem;
-    }
-}
+// @media screen and (max-width: 768px) {
+//     .choice-container {
+//         min-width: 70rem;
+//     }
+// }

@@ -1,0 +1,36 @@
+.info {
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: .2rem solid $col-white;
+    border-radius: 50%;
+    font-size: 2rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 5rem;
+    transition: all .3s;
+}
+
+.info:hover {
+    transform:scale(1.15);
+}
+
+.info-box {
+    position: absolute;
+    /* content: ''; */
+    width: 20rem;
+    height: 10rem;
+    background-color: tomato;
+    right: 6rem;
+    bottom: 6rem;
+    display: none;
+}
+
+
+
+.fa-info-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
