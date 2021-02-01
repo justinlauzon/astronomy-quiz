@@ -125,7 +125,7 @@ h2 {
   padding: 2rem;
   padding-bottom: 4rem;
   font-size: 1.6rem;
-  background-color: #1d6581;
+  background-color: rgba(29, 101, 129, 0.8);
   right: 5rem;
   bottom: 6rem;
   max-width: 50rem;
@@ -250,7 +250,7 @@ body {
 
 .choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0 0 0.2rem rgba(44, 221, 183, 0.7); }
+  box-shadow: 0 0 0 0.2rem #1d6581; }
 
 .choice-wrapper {
   position: relative; }
@@ -264,10 +264,10 @@ body {
   width: 100%; }
 
 .correct {
-  background: linear-gradient(32deg, #3eec81 0%, #29e86f 100%); }
+  background: #3eec81; }
 
 .incorrect {
-  background: linear-gradient(32deg, #e9593f 0%, #b63f3f 100%); }
+  background: #e9593f; }
 
 /* Heads Up Display */
 #hud {

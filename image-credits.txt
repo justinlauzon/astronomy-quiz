@@ -1,27 +1,52 @@
+bubble:
+    NASA, ESA, Hubble Heritage Team
+    https://esahubble.org/images/heic1608a/
+
 cone: 
     NASA, Holland Ford (JHU), the ACS Science Team and ESA
+    https://esahubble.org/images/heic0206c/
 
-redspider: 
-    ESA & Garrelt Mellema (Leiden University, the Netherlands)
-    https://esahubble.org/images/heic0109a/
+crab: 
+    NASA, ESA and Allison Loll/Jeff Hester (Arizona State University). Acknowledgement: Davide De Martin (ESA/Hubble)
+    https://esahubble.org/images/heic0515a/
+    
+helix:
+    NASA, ESA, C.R. O'Dell (Vanderbilt University), and M. Meixner, P. McCullough, and G. Bacon ( Space Telescope Science Institute)
+    https://esahubble.org/images/opo0432d/
+
+horsehead:
+    NASA, ESA, and the Hubble Heritage Team (AURA/STScI)
+    https://esahubble.org/images/heic1307a/
+
+monkeyhead:
+    NASA, ESA, and the Hubble Heritage Team (STScI/AURA)
+    https://esahubble.org/images/heic1406a/
 
 mysticmountain: 
     NASA, ESA, M. Livio and the Hubble 20th Anniversary Team (STScI)
     https://esahubble.org/images/heic1007a/
 
+orion:
+    NASA, ESA, M. Robberto ( Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team
+    https://esahubble.org/images/heic0601a/
+
+redspider: 
+    ESA & Garrelt Mellema (Leiden University, the Netherlands)
+    https://esahubble.org/images/heic0109a/
+
 southerncrab:
     NASA, ESA, and STScI
     https://esahubble.org/images/heic1907a/
 
-helix:
-    NASA, ESA, C.R. O'Dell (Vanderbilt University), and M. Meixner, P. McCullough, and G. Bacon ( Space Telescope Science Institute)
-    https://esahubble.org/images/opo0432d/
 
 
 butterfly:
     NASA, ESA, and J. Kastner (RIT)
     https://esahubble.org/images/heic2011b/
 
+laggon:
+    NASA, ESA, STScI
+    https://esahubble.org/images/heic1808a/
 
 lagoon2:   
     NASA, ESA, J. Trauger (Jet Propulsion Laboratory)

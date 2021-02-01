@@ -48,7 +48,7 @@ body {
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0 0 .2rem rgba(44, 221, 183, .7);
+    box-shadow: 0 0 0 .2rem rgba($col-info, 1);
 }
 
 .choice-wrapper {
@@ -67,11 +67,11 @@ body {
 }
 
 .correct {
-    background: linear-gradient(32deg, rgb(62, 236, 129) 0%, rgb(41, 232, 111) 100%);
+    background: $col-correct;
 }
 
 .incorrect {
-    background: linear-gradient(32deg, rgb(233, 89, 63) 0%, rgb(182, 63, 63) 100%);
+    background: $col-incorrect;
 }
 
 /* Heads Up Display */
