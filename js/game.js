@@ -7,9 +7,8 @@ const container = document.querySelector('body');
 const actualContainer = document.querySelector('.container');
 const game = document.querySelector('#game');
 const info = document.querySelector('.info');
+const infoBox = document.querySelector('.info-box');
 const nextBtn = document.querySelector('.next-button');
-
-
 
 
 

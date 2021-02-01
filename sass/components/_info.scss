@@ -7,7 +7,7 @@
     font-size: 2rem;
     position: absolute;
     right: 2rem;
-    bottom: 5rem;
+    bottom: 2rem;
     transition: all .3s;
 }
 
@@ -17,13 +17,16 @@
 
 .info-box {
     position: absolute;
-    /* content: ''; */
-    width: 20rem;
-    height: 10rem;
-    background-color: tomato;
-    right: 6rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    font-size: 1.6rem;
+    background-color: $col-info;
+    right: 5rem;
     bottom: 6rem;
-    display: none;
+    max-width: 50rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 95%, 0 95%);
+
+    display: block;
 }
 
 
