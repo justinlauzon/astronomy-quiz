@@ -1,0 +1,25 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "An astronomy quiz",
+  "main": "game.js",
+  "dependencies": {
+    "sass": "^1.32.5"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinlauzon/astronomy-quiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinlauzon/astronomy-quiz/issues"
+  },
+  "homepage": "https://github.com/justinlauzon/astronomy-quiz#readme"
+}

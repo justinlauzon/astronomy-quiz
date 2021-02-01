@@ -38,7 +38,7 @@ let availableQuestions = [];
 let questions = [
     {
         question: 'Name the Nebula',
-        bg: 'url(img/orion.jpg)',
+        bg: 'url(../img/orion.jpg)',
         choice1: 'Mandible',
         choice2: 'Orion',
         choice3: 'Clear',
@@ -47,7 +47,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/horsehead.jpg)',
+        bg: 'url(../img/horsehead.jpg)',
         choice1: 'Bowtie',
         choice2: 'Horsehead',
         choice3: 'Butterfly',
@@ -56,7 +56,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/boomerang.jpg)',
+        bg: 'url(../img/boomerang.jpg)',
         choice1: 'Bowtie',
         choice2: 'Hourglass',
         choice3: 'Butterfly',
@@ -65,7 +65,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/butterfly.jpg)',
+        bg: 'url(../img/butterfly.jpg)',
         choice1: 'Bowtie',
         choice2: 'Hourglass',
         choice3: 'Butterfly',
@@ -74,7 +74,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/southerncrab.jpg)',
+        bg: 'url(../img/southerncrab.jpg)',
         choice1: 'Eastern Vortex',
         choice2: 'Northern Butterfly',
         choice3: 'Southern Crab',
@@ -83,7 +83,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/helix.jpg)',
+        bg: 'url(../img/helix.jpg)',
         choice1: 'Omega',
         choice2: 'Helix',
         choice3: 'God\'s Eye',
@@ -92,7 +92,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/cone.jpg)',
+        bg: 'url(../img/cone.jpg)',
         choice1: 'Cone',
         choice2: 'Mountain',
         choice3: 'Worm',
@@ -101,7 +101,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/redspider.jpg)',
+        bg: 'url(../img/redspider.jpg)',
         choice1: 'Omega',
         choice2: 'Red Spider',
         choice3: 'Cavern',
@@ -110,7 +110,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/mysticmountain.jpg)',
+        bg: 'url(../img/mysticmountain.jpg)',
         choice1: 'Carina',
         choice2: 'Dune',
         choice3: 'Angel',
@@ -119,7 +119,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/carina.jpg)',
+        bg: 'url(../img/carina.jpg)',
         choice1: 'Westbrook',
         choice2: 'Carina',
         choice3: 'Omega',
@@ -128,7 +128,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/bubble.jpg)',
+        bg: 'url(../img/bubble.jpg)',
         choice1: 'Westbrook',
         choice2: 'Crab',
         choice3: 'Bubble',
@@ -137,7 +137,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/eagle-nebula_ae188e318ffa2043fc04017447a73985.jpg)',
+        bg: 'url(../img/eagle-nebula_ae188e318ffa2043fc04017447a73985.jpg)',
         choice1: 'Eagle',
         choice2: 'Crab',
         choice3: 'Cat\'s Eye',
@@ -146,7 +146,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/lagoon.jpg)',
+        bg: 'url(../img/lagoon.jpg)',
         choice1: 'Lagoon',
         choice2: 'Crab',
         choice3: 'Cat\'s Eye',
@@ -155,7 +155,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(img/lagoon2.jpg)',
+        bg: 'url(../img/lagoon2.jpg)',
         choice1: 'Westbrook',
         choice2: 'Carina',
         choice3: 'Lagoon',

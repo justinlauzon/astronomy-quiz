@@ -6,7 +6,7 @@ body {
     background-color: rgb(29, 29, 26);
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background-image: url(img/home2.jpg);
+    background-image: url(../img/home2.jpg);
     background-position: bottom;
 
 }
