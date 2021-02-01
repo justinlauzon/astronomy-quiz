@@ -6,9 +6,8 @@ const progressBarFull = document.querySelector('#progressBarFull');
 const container = document.querySelector('body');
 const actualContainer = document.querySelector('.container');
 const game = document.querySelector('#game');
-// const showTab = document.querySelector('#show-tab');
-// const gameTabIcon = document.querySelector('#show__icon')
-const info = document.querySelector('.info')
+const info = document.querySelector('.info');
+const nextBtn = document.querySelector('.next-button');
 
 
 
@@ -16,14 +15,12 @@ const info = document.querySelector('.info')
 
 
 actualContainer.addEventListener('click', function(e) {
-    if(e.target !== this) {
+    if(e.target !== this || screenLock) {
         return;
     } 
     else {
         game.classList.toggle('move-left');
         game.classList.toggle('move-from-left');
-        // gameTabIcon.classList.toggle('fa-chevron-circle-right');
-        // gameTabIcon.classList.toggle('fa-chevron-circle-left');
     }
 })
 
@@ -33,6 +30,7 @@ let acceptingAnswer = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+let screenLock = false;
 
 
 let questions = [
@@ -203,6 +201,13 @@ getNewQuestion = () => {
 
         return window.location.assign('/end.html');
     }
+
+    choices.forEach(choice => {
+        choice.parentElement.classList.remove('correct', 'incorrect');
+    })
+
+    nextBtn.style.display ="none";
+    screenLock = false;
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
@@ -226,7 +231,7 @@ choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswer) return
 
-        acceptingAnswers = false
+        acceptingAnswer = false
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
@@ -238,9 +243,9 @@ choices.forEach(choice => {
         selectedChoice.parentElement.classList.add(classToApply)
 
         setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
-        }, 500)
+            nextBtn.style.display ="block";
+            screenLock = true;
+        }, 1000)
     })
 })
 
