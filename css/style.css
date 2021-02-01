@@ -130,7 +130,7 @@ h2 {
   bottom: 6rem;
   max-width: 50rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 95%, 0 95%);
-  display: block; }
+  display: none; }
 
 .fa-info-circle {
   position: absolute;

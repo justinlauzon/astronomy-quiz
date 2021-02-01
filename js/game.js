@@ -10,7 +10,13 @@ const info = document.querySelector('.info');
 const infoBox = document.querySelector('.info-box');
 const nextBtn = document.querySelector('.next-button');
 
+info.addEventListener('mouseover', e => {
+    infoBox.style.display = "block"
+})
 
+info.addEventListener('mouseout', e => {
+    infoBox.style.display = "none";
+})
 
 
 actualContainer.addEventListener('click', function(e) {
@@ -41,6 +47,7 @@ let questions = [
         choice3: 'Clear',
         choice4: 'Angel',
         answer: 2,
+        info: "Orion"
     },
     {
         question: 'Name the Nebula',
@@ -50,6 +57,7 @@ let questions = [
         choice3: 'Butterfly',
         choice4: 'Boomerang',
         answer: 2,
+        info: "Horsehead"
     },
     {
         question: 'Name the Nebula',
@@ -59,6 +67,7 @@ let questions = [
         choice3: 'Butterfly',
         choice4: 'Boomerang',
         answer: 4,
+        info: "Boomerang"
     },
     {
         question: 'Name the Nebula',
@@ -68,6 +77,7 @@ let questions = [
         choice3: 'Butterfly',
         choice4: 'Boomerang',
         answer: 3,
+        info: "Butterly"
     },
     {
         question: 'Name the Nebula',
@@ -77,6 +87,7 @@ let questions = [
         choice3: 'Southern Crab',
         choice4: 'Western Bow',
         answer: 3,
+        info: "Southern Crab"
     },
     {
         question: 'Name the Nebula',
@@ -86,6 +97,7 @@ let questions = [
         choice3: 'God\'s Eye',
         choice4: 'Iris',
         answer: 2,
+        info: "Helix"
     },
     {
         question: 'Name the Nebula',
@@ -95,6 +107,7 @@ let questions = [
         choice3: 'Worm',
         choice4: 'Pillar',
         answer: 1,
+        info: "Cone"
     },
     {
         question: 'Name the Nebula',
@@ -104,6 +117,7 @@ let questions = [
         choice3: 'Cavern',
         choice4: 'Paladin',
         answer: 2,
+        info: "Red Spider"
     },
     {
         question: 'Name the Nebula',
@@ -112,7 +126,8 @@ let questions = [
         choice2: 'Dune',
         choice3: 'Angel',
         choice4: 'Mystic Mountain',
-        answer: 1,
+        answer: 4,
+        info: "Mystic Mountain"
     },
     {
         question: 'Name the Nebula',
@@ -122,6 +137,7 @@ let questions = [
         choice3: 'Omega',
         choice4: 'Horsehead',
         answer: 2,
+        info: "Carina"
     },
     {
         question: 'Name the Nebula',
@@ -131,6 +147,7 @@ let questions = [
         choice3: 'Bubble',
         choice4: 'Horsehead',
         answer: 3,
+        info: "Bubble"
     },
     {
         question: 'Name the Nebula',
@@ -140,6 +157,7 @@ let questions = [
         choice3: 'Cat\'s Eye',
         choice4: 'Horsehead',
         answer: 1,
+        info: "Eagle"
     },
     {
         question: 'Name the Nebula',
@@ -149,6 +167,7 @@ let questions = [
         choice3: 'Cat\'s Eye',
         choice4: 'Horsehead',
         answer: 1,
+        info: "To celebrate its 28th anniversary in space the NASA/ESA Hubble Space Telescope took this amazing and colourful image of the Lagoon Nebula. The whole nebula, about 4000 light-years away, is an incredible 55 light-years wide and 20 light-years tall. This image shows only a small part of this turbulent star-formation region, about four light-years across."
     },
     {
         question: 'Name the Nebula',
@@ -158,6 +177,7 @@ let questions = [
         choice3: 'Lagoon',
         choice4: 'Horsehead',
         answer: 3,
+        info: "Lagoon"
     },
 ]
 
@@ -172,28 +192,6 @@ startGame = () => {
 }
 
 
-// showTab.addEventListener('click', e => {
-//     game.classList.toggle('move-left');
-//     game.classList.toggle('move-from-left');
-    
-//     setTimeout(() => {
-//         gameTabIcon.classList.toggle('fa-chevron-circle-right');
-//         gameTabIcon.classList.toggle('fa-chevron-circle-left');
-//     }, 200)
-// })
-
-
-// showTab.addEventListener('mouseover', e => {
-//     showTab.style.left = '0';
-// })
-
-// showTab.addEventListener('mouseleave', e => {
-//     setTimeout(() => {
-//         showTab.style.left = '-4rem';
-//     }, 1000)
-// })
-
-
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -201,10 +199,7 @@ getNewQuestion = () => {
         return window.location.assign('/end.html');
     }
 
-    choices.forEach(choice => {
-        choice.parentElement.classList.remove('correct', 'incorrect');
-    })
-
+ 
     if(questionCounter === (MAX_QUESTIONS -1)) {
         nextBtn.innerText = "Finish Quiz";
     }
@@ -219,10 +214,12 @@ getNewQuestion = () => {
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
     container.style.backgroundImage = currentQuestion.bg
+    infoBox.innerText = currentQuestion.info
 
     choices.forEach(choice => {
         const number = choice.dataset['number']
         choice.innerText = currentQuestion['choice' + number]
+        choice.parentElement.classList.remove('correct', 'incorrect');
     })
 
     availableQuestions.splice(questionsIndex, 1)
