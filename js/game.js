@@ -41,7 +41,7 @@ let screenLock = false;
 let questions = [
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/orion.jpg)',
+        bg: 'url(../astronomy-quiz/img/orion.jpg)',
         choice1: 'Mandible',
         choice2: 'Orion',
         choice3: 'Clear',
@@ -51,7 +51,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/horsehead.jpg)',
+        bg: 'url(../astronomy-quiz/img/horsehead.jpg)',
         choice1: 'Bowtie',
         choice2: 'Horsehead',
         choice3: 'Butterfly',
@@ -61,7 +61,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/boomerang.jpg)',
+        bg: 'url(../astronomy-quiz/img/boomerang.jpg)',
         choice1: 'Bowtie',
         choice2: 'Hourglass',
         choice3: 'Butterfly',
@@ -71,7 +71,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/butterfly.jpg)',
+        bg: 'url(../astronomy-quiz/img/butterfly.jpg)',
         choice1: 'Bowtie',
         choice2: 'Hourglass',
         choice3: 'Butterfly',
@@ -81,7 +81,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/southerncrab.jpg)',
+        bg: 'url(../astronomy-quiz/img/southerncrab.jpg)',
         choice1: 'Eastern Vortex',
         choice2: 'Northern Butterfly',
         choice3: 'Southern Crab',
@@ -91,7 +91,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/helix.jpg)',
+        bg: 'url(../astronomy-quiz/img/helix.jpg)',
         choice1: 'Omega',
         choice2: 'Helix',
         choice3: 'God\'s Eye',
@@ -101,7 +101,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/ring.jpg)',
+        bg: 'url(../astronomy-quiz/img/ring.jpg)',
         choice1: 'Omega',
         choice2: 'Helix',
         choice3: 'God\'s Eye',
@@ -111,7 +111,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/cone.jpg)',
+        bg: 'url(../astronomy-quiz/img/cone.jpg)',
         choice1: 'Cone',
         choice2: 'Mountain',
         choice3: 'Worm',
@@ -121,7 +121,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/redspider.jpg)',
+        bg: 'url(../astronomy-quiz/img/redspider.jpg)',
         choice1: 'Omega',
         choice2: 'Red Spider',
         choice3: 'Cavern',
@@ -131,7 +131,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/mysticmountain.jpg)',
+        bg: 'url(../astronomy-quiz/img/mysticmountain.jpg)',
         choice1: 'Carina',
         choice2: 'Dune',
         choice3: 'Angel',
@@ -141,7 +141,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/carina.jpg)',
+        bg: 'url(../astronomy-quiz/img/carina.jpg)',
         choice1: 'Westbrook',
         choice2: 'Carina',
         choice3: 'Omega',
@@ -151,7 +151,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/bubble.jpg)',
+        bg: 'url(../astronomy-quiz/img/bubble.jpg)',
         choice1: 'Westbrook',
         choice2: 'Crab',
         choice3: 'Bubble',
@@ -161,7 +161,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/eagle-nebula_ae188e318ffa2043fc04017447a73985.jpg)',
+        bg: 'url(../astronomy-quiz/img/eagle-nebula_ae188e318ffa2043fc04017447a73985.jpg)',
         choice1: 'Eagle',
         choice2: 'Crab',
         choice3: 'Cat\'s Eye',
@@ -171,7 +171,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/lagoon.jpg)',
+        bg: 'url(../astronomy-quiz/img/lagoon.jpg)',
         choice1: 'Lagoon',
         choice2: 'Crab',
         choice3: 'Cat\'s Eye',
@@ -181,7 +181,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/lagoon2.jpg)',
+        bg: 'url(../astronomy-quiz/img/lagoon2.jpg)',
         choice1: 'Westbrook',
         choice2: 'Carina',
         choice3: 'Lagoon',
@@ -191,7 +191,7 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/crab.jpg)',
+        bg: 'url(../astronomy-quiz/img/crab.jpg)',
         choice1: 'Rock',
         choice2: 'Crab',
         choice3: 'Lagoon',
@@ -201,12 +201,12 @@ let questions = [
     },
     {
         question: 'Name the Nebula',
-        bg: 'url(../img/monkeyhead.jpg)',
+        bg: 'url(../astronomy-quiz/img/monkeyhead.jpg)',
         choice1: 'Lagoon',
         choice2: 'Cavern',
         choice3: 'Mystic Mountain',
         choice4: 'Monkey Head',
-        answer: 2,
+        answer: 4,
         info: "This nebula, NGC 2174, lies about 6400 light-years away in the constellation of Orion (The Hunter). Hubble previously viewed this part of the sky back in 2011 — the colourful region is filled with young stars embedded within bright wisps of cosmic gas and dust."
     },
 ]
@@ -217,6 +217,7 @@ const MAX_QUESTIONS = 5;
 startGame = () => {
     questionCounter = 0;
     score = 0;
+    scoreText.innerText = 0;
     availableQuestions = [...questions];
     getNewQuestion();
 }
@@ -226,7 +227,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('/end.html');
+        return window.location.assign('end.html');
     }
 
  
