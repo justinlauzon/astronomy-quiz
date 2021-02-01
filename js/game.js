@@ -163,7 +163,7 @@ let questions = [
 ]
 
 const SCORE_POINTS = 1;
-const MAX_QUESTIONS = 6;
+const MAX_QUESTIONS = 5;
 
 startGame = () => {
     questionCounter = 0;
@@ -205,6 +205,10 @@ getNewQuestion = () => {
     choices.forEach(choice => {
         choice.parentElement.classList.remove('correct', 'incorrect');
     })
+
+    if(questionCounter === (MAX_QUESTIONS -1)) {
+        nextBtn.innerText = "Finish Quiz";
+    }
 
     nextBtn.style.display ="none";
     screenLock = false;
