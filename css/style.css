@@ -47,7 +47,7 @@ h2 {
   display: none; }
 
 .margin-bottom-big {
-  margin-bottom: 4rem; }
+  margin-bottom: 6rem; }
 
 .flex-column {
   display: flex;
@@ -100,11 +100,10 @@ h2 {
   text-align: center;
   cursor: pointer;
   border-radius: 5rem;
-  /* opacity: 0; */
   position: absolute;
   bottom: 0;
-  width: 100%;
-  /* visibility: hidden;     */ }
+  display: none;
+  width: 100%; }
 
 .info {
   width: 3rem;
@@ -224,7 +223,7 @@ body {
 #game {
   position: absolute;
   left: 4rem;
-  /* bottom: 4rem; */ }
+  bottom: 4rem; }
 
 .choice-container {
   /* display: flex;
@@ -242,8 +241,10 @@ body {
   display: flex;
   width: 30rem;
   color: black;
-  margin-bottom: 1rem;
+  margin-bottom: 5.5rem;
   transition: all .2s; }
+  .choice-container:not(:last-child) {
+    margin-bottom: 1rem; }
 
 .choice-container:hover {
   cursor: pointer;

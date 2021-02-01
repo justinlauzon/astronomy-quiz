@@ -15,7 +15,7 @@ body {
 #game {
     position: absolute;
     left: 4rem;
-    /* bottom: 4rem; */
+    bottom: 4rem;
 }
 
 
@@ -37,8 +37,12 @@ body {
     display: flex;
     width: 30rem;
     color: black;
-    margin-bottom: 1rem;
+    margin-bottom: 5.5rem;
     transition: all .2s;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
 
 }
 
