@@ -209,6 +209,16 @@ let questions = [
         answer: 4,
         info: "This nebula, NGC 2174, lies about 6400 light-years away in the constellation of Orion (The Hunter). Hubble previously viewed this part of the sky back in 2011 — the colourful region is filled with young stars embedded within bright wisps of cosmic gas and dust."
     },
+    {
+        question: 'Name the Nebula',
+        bg: 'url(../astronomy-quiz/img/tarantula.jpg)',
+        choice1: 'Tarantula',
+        choice2: 'Widow',
+        choice3: 'Elephant',
+        choice4: 'Orchid',
+        answer: 1,
+        info: "This nebula is situated 170,000 light-years away in the Large Magellanic Cloud (LMC) in the Southern sky and is clearly visible to the naked eye as a large milky patch. Astronomers believe that this smallish irregular galaxy is currently going through a violent period in its life. It is orbiting around the Milky Way and has had several close encounters with it. It is believed that the interaction with the Milky Way has caused an episode of energetic star formation - part of which is visible as this nebula."
+    },
 ]
 
 const SCORE_POINTS = 1;
@@ -218,6 +228,7 @@ startGame = () => {
     questionCounter = 0;
     score = 0;
     scoreText.innerText = 0;
+    nextBtn.innerText = "Next Question";
     availableQuestions = [...questions];
     getNewQuestion();
 }
@@ -227,7 +238,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('end.html');
+        return window.location.assign('end');
     }
 
  

@@ -38,6 +38,9 @@ southerncrab:
     NASA, ESA, and STScI
     https://esahubble.org/images/heic1907a/
 
+tarantula:
+    ESA/NASA, ESO and Danny LaCrue
+    https://esahubble.org/images/heic0416a/
 
 
 butterfly:
