@@ -16,3 +16,13 @@ body {
     margin: 0 auto;
     
 }
+
+@media screen and (max-width: 600px) {
+    #homeButtons {
+        flex-direction: column;
+    }
+    .home-title {
+        font-size: 3rem;
+
+    }
+}
