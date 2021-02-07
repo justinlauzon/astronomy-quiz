@@ -10,9 +10,6 @@ const info = document.querySelector('.info');
 const infoBox = document.querySelector('.info-box');
 const nextBtn = document.querySelector('.next-button');
 
-info.addEventListener('mouseover', e => {
-    infoBox.style.display = "block"
-})
 
 info.addEventListener('mouseout', e => {
     infoBox.style.display = "none";
