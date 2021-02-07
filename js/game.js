@@ -18,6 +18,13 @@ info.addEventListener('mouseout', e => {
     infoBox.style.display = "none";
 })
 
+info.addEventListener('click', e => {
+    if(infoBox.style.display === "none") {
+        infoBox.style.display = "block"
+    } else
+        infoBox.style.display = "none"
+})
+
 
 actualContainer.addEventListener('click', function(e) {
     if(e.target !== this || screenLock) {
