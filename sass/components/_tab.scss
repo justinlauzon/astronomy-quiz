@@ -31,3 +31,9 @@
 #show-tab {
     margin-top: 4rem;
 }
+
+@media screen and (max-width: 768px) {
+    .game-tabs {
+        top: 1rem;
+    }
+}

@@ -138,6 +138,14 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+@media screen and (max-width: 768px) {
+  .info-box {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    left: 0;
+    background-color: #1d6581; } }
+
 #progressBar {
   width: 20rem;
   height: 3rem;
@@ -180,6 +188,10 @@ h2 {
 #show-tab {
   margin-top: 4rem; }
 
+@media screen and (max-width: 768px) {
+  .game-tabs {
+    top: 1rem; } }
+
 /* End Page CSS */
 .end-form-container {
   width: 100%;
@@ -217,8 +229,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* -webkit-transition: background-image 1s; */
-  /* transition: background-image 1s; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
@@ -283,6 +293,15 @@ body {
 
 #question {
   font-size: 3rem; }
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+    width: 100%; }
+  #fullscreen, #hud__progress {
+    display: none; }
+  #game {
+    bottom: 2rem;
+    left: 1rem; } }
 
 #highScoresList {
   list-style: none;

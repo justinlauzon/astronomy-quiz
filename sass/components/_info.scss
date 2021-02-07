@@ -36,3 +36,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 768px) {
+    .info-box {
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        left: 0;
+        background-color: rgba($col-info, 1);
+    }
+}

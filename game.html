@@ -13,7 +13,7 @@
     
     <div class="container">
         <div class="game-tabs">
-            <div class="game-tab" onclick="toggleFullScreen()"><i id="fullscreen__icon" class="fas fa-desktop game-tab--icon"></i></div>
+            <div id="fullscreen" class="game-tab" onclick="toggleFullScreen()"><i id="fullscreen__icon" class="fas fa-desktop game-tab--icon"></i></div>
             <a href="index.html"><div class="game-tab"><i id="home__icon" class="fas fa-home game-tab--icon"></i></div></a>
             <div class="game-tab" onclick="startGame()"><i id="new-game__icon" class="fas fa-undo-alt game-tab--icon"></i></div>
             <a href="highscores.html"><div class="game-tab" ><i  class="fas fa-crown game-tab--icon"></i></div></a>
@@ -24,7 +24,7 @@
 
         <div id="game" class="move-from-left">
             <div id="hud">
-                <div class="hud-item">
+                <div id="hud__progress" class="hud-item">
                     <p id="progressText" class="hud-prefix">
                         Question
                     </p>
