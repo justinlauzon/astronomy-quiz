@@ -326,8 +326,10 @@ body {
   padding: 2rem;
   margin: 0 auto; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #homeButtons {
     flex-direction: column; }
   .home-title {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .container {
+    height: calc(var(--vh, 1vh) * 100); } }
