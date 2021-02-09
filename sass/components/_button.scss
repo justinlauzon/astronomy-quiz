@@ -10,12 +10,13 @@
     border: .2rem solid rgb(122, 153, 201);
     transition: all 300ms;
     user-select: none;
+    background-color: transparent;
     
 }
 
 .btn:hover {
     cursor: pointer;
-    background-color: rgba(122, 153, 201, .7);
+    background-color: rgba(122, 153, 201, .7); 
     
     /* transform: scale(1.03); */
 }
